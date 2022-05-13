@@ -1,7 +1,7 @@
-#define _CRT_SECURE_NO_WARNINGS 
+//#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
-#include <stdbool.h>
-#include <stdlib.h>
+//#include <stdbool.h>
+//#include <stdlib.h>
 
 // nums_len은 배열 nums의 길이입니다.
 int solution(int nums[], size_t nums_len) {
