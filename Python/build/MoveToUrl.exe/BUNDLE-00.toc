@@ -1,0 +1,3 @@
+([('MoveToUrl.exe',
+   '/Users/leehaneum/developing/Python/dist/MoveToUrl.exe',
+   'EXECUTABLE')],)
