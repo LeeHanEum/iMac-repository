@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS 
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
@@ -22,7 +21,7 @@ int solution() {
                     break;
                 } else{
                     sum = nums[i]+nums[k]+nums[j];
-                    printf("소수는 %d\n", sum);
+                    return sum;
                 }
                 
             }
@@ -31,57 +30,12 @@ int solution() {
         }
         
     }
-    printf("소수의 개수는 %d", prime);
-/*
-    for (j = 0; j < nums_len*nums_len; j++)
-    {
-        for ( l = j+1; l < nums_len*nums_len; l++)
-        {
-            if (sum[j]==sum[l])
-            {
-                sum[l]=0;
-            }
-            
-        } 
-        
-    }
-
-
-    for ( j = 0; j < sizeof(sum)/sizeof(int); j++)
-    {
-        printf("%d\n", sum[j]);
-        int x=0;
-        for(i=1; i<=sum[j]; i++){
-            if (sum[j]%i==0){
-                x++;
-            }else{
-
-            }
-
-        }
-
-        if(x==2){
-            prime++;
-        }else{
-            
-        }
-    }
-
-    printf("소수의 개수는 %d", prime);
-
-    
-    
-// [124] 2 3 5 3 4 6 5 6 8 -> 2 3 5 0 4 6 0 0 8   
-// 1+0+4 = 5 1+1+4=6 2+0+8 
-// 2 3 4 5 6 3 4 5 6 7 4 5 6 7 8
-*/
-
-    return sum;
+    return 0;
 
 }
 
 int prime(sum){
-    int i, sum;
+    int i;
     int x=0;
         for(i=1; i<=sum; i++){
             if (sum%i==0){
