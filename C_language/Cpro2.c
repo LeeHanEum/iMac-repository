@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int main (){
-    int n, m;
+    int n, m = 0;
     int sum = 0;
 
     printf("정수 n을 입력 : ");
