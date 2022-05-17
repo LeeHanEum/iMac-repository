@@ -4,28 +4,32 @@
 
 void solution() {
     int i,k,j,n;
-    //int sum;
     int a=1;
     int sum[a];
     int prime=0;
-    //int nums[4] = {1,2,3,4};
-    int nums[5] = {1,2,3,4,5};
+    //int nums[3] = {1,2,4};
+    int nums[4] = {1,2,3,4};
+    //int nums[5] = {1,2,3,4,5};
     int nums_len = sizeof(nums)/sizeof(int);//배열 원소의 개수
 
-        printf("%d",nums_len);
+        
 
 // 배열 원소 중에서 3개를 골라 더한 값을 배열에 담는 로직
     for (i = 0; i < nums_len; i++)
-    {
+    { 
         for ( k = 1; k < nums_len; k++)
         {
             for ( j = 2; j < nums_len; j++)
-            {
+            {   
                 if(i==k || i==j || j==k){
                     break;
                 } else{
+                    printf("%d %d %d \n",i,k,j);
                     sum[a-1] = nums[i]+nums[k]+nums[j];
                     int sum[a++];
+                    
+                    
+                    
                 }
                 
             }
@@ -35,9 +39,6 @@ void solution() {
         
     } 
 
-
-
-    /*
 
 // 배열 원소 중에서 중복되는 것이 있으면 그 원소를 제거하는 로직
     for (i = 0; i < a-1; i++)
@@ -78,7 +79,7 @@ void solution() {
     }
     
     printf("소수의 개수는 %d", prime);
-    */
+    
     
 }
 
